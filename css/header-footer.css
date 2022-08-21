@@ -1,0 +1,136 @@
+/* 
+  The following people have worked on this file: 
+  Justin Mountain
+*/
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem var(--padding-master);
+}
+
+header a {
+  text-decoration: none;
+  color: #212121;
+  font: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo-image {
+  height: 4rem;
+}
+
+.site-name {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  margin: auto;
+}
+
+.nav-item {
+  /* padding-right: 2rem; */
+  text-align: center;
+}
+
+.nav-btn {
+  text-align: center;
+}
+
+#nav-signin {
+  width: 4rem;
+  border-radius: 100vw;
+  color: black;
+  border: 3px solid black;
+  background-color: white;
+  padding: 0.25rem 1rem;
+}
+
+#nav-join {
+  width: 4rem;
+  border-radius: 100vw;
+  color: black;
+  border: 3px solid black;
+  background-color: white;
+  padding: 0.25rem 1rem;
+}
+
+#nav-logout {
+  width: 5rem;
+  background-color: green;
+  border-radius: 100vw;
+  color: white;
+}
+
+.cart-image {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 55rem) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: inline;
+  }
+
+  .logo-image {
+    height: 8rem;
+  }
+
+  .site-name {
+    display: inline;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-item,
+  .nav-btn {
+    padding: 0;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--padding-master);
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+footer a {
+  text-decoration: none;
+  color: #212121;
+  font-weight: bolder;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

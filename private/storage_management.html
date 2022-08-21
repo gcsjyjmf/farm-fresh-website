@@ -1,0 +1,23 @@
+<!-- 
+    The following people have worked on this file:
+     Lei Li
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+  <script type="module" src="../js/shoppingcart.js"></script>
+  <script>
+    window.onload = () => {
+      sessionStorage.removeItem('shopping_cart');
+      window.location = '../index.php'
+    }
+  </script>
+</body>
+
+</html>

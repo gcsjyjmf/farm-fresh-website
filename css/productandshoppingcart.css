@@ -1,0 +1,250 @@
+/* 
+  The following people have worked on this file: 
+  Mengya Shi
+*/
+:root {
+    --padding-master: 10%;
+}
+
+html {
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#box4 {
+    background-color: #f9f9f9;
+    text-align: center;
+    min-height: 10px;
+    margin-bottom: 1rem;
+}
+
+
+/* styling for product details */
+#product-container-outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-container-inner {
+    display: block;
+}
+
+#product-container-outer {
+    min-height: 40rem;
+    padding: 1rem var(--padding-master);
+    margin: 5%;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 /20%);
+    position: relative;
+    align-items: center;
+    /* display: flex; */
+    /* align-items: flex-start; */
+}
+
+.product-container-inner {
+    text-align: center;
+    padding-top: 1rem;
+    /* display: inline-block; */
+    align-items: middle;
+}
+
+
+.detail-container-inner {
+    padding-top: 1rem;
+    display: inline-block;
+}
+
+
+.detailpage-price p {
+    display: inline-block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+}
+
+#turn-to-del-button,
+#add-btn,
+#delete-btn,
+#add-to-cart-btn,
+#save-button,
+#reset-button,
+#payment-button,
+#signin-button {
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(12, 65, 33);
+    font-weight: bolder;
+    margin-right: 1rem;
+}
+
+#turn-to-del-button:hover,
+#add-btn:hover,
+#delete-btn:hover,
+#add-to-cart-btn:hover,
+#save-button:hover,
+#reset-button:hover,
+#payment-button:hover,
+#signin-button:hover {
+    cursor: pointer;
+    background-color: rgb(12, 65, 33, 0.5);
+}
+
+/* styling for administrator page, formatted by Mengya Shi*/
+.image-container-inner label {
+    padding: 1rem;
+    display: block;
+    width: 15rem;
+    margin: auto;
+
+}
+
+.image-container-inner input {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detailpageid input,
+#detailpage-product-name input,
+.detailpage-price input,
+#detailpage-organic-checker input,
+#detailpage-description input,
+.detailpage-quantity input {
+    width: 20px;
+    border: 1px solid rgb(176, 185, 185);
+
+}
+
+#detailpage-product-name,
+#detailpage-organic-checker,
+#detailpage-description,
+.detailpage-quantity,
+#detailpage-vegfruit-selector {
+    margin-bottom: 1em;
+}
+
+.detailpage-price input {
+    margin-bottom: 1rem;
+}
+
+#detailpage-image {
+    width: 200px;
+    height: auto;
+}
+
+/* styling for shopping cart page, formatted by Mengya Shi*/
+#shopping-cart-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    min-height: 20rem;
+    padding: 1rem var(--padding-master);
+    margin: 5%;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 /20%);
+    position: relative;
+}
+
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+    margin: 5% 0;
+
+}
+
+.product-wrapper-inner {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.total-wrapper {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: bottom;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 3.2rem;
+    font-size: medium;
+}
+
+.in-cart-product-photos,
+.cartpage-name,
+.cartpage-price,
+.cartpage-quantity,
+.subtotal,
+.space-separater {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    font-size: small;
+}
+
+@media screen and (min-width: 100rem) {
+
+    /* #shopping-cart-outer,
+    #product-container-outer {
+        margin: 5%;
+    } */
+    #product-container-outer {
+        display: flex;
+        flex-direction: row;
+        min-height: fit-content;
+    }
+
+    .detail-container-inner {
+        display: inline-block;
+    }
+
+    #detailpage-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .detail-container-inner {
+        padding-left: 3rem;
+    }
+
+    /* .product-wrapper-inner {
+        display: inline-flex;
+        flex-direction: row;
+    } */
+
+}
+
+@media screen and (min-width: 55rem) {
+
+    /* #shopping-cart-outer,
+    #product-container-outer {
+        margin: 5%;
+    } */
+    #product-container-outer {
+        display: flex;
+        flex-direction: row;
+        min-height: fit-content;
+    }
+
+    .detail-container-inner {
+        display: inline-block;
+    }
+
+    #detailpage-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .detail-container-inner {
+        padding-left: 3rem;
+    }
+
+}

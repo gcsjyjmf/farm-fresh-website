@@ -1,0 +1,28 @@
+recommendation page---
+1. organic watermelon
+2. organic apple
+3. organic peach
+4. organic tomato
+5. organic onion
+
+fruits---
+1. organic watermelon
+2. organic apple
+3. organic peach
+4. watermelon
+5. strawberry
+6. banana
+7. apple
+8. cherry
+9. organge
+
+vegetables---
+1. organic tomato
+2. organic onion
+3. organic chilli
+4. organic cucumber
+5. organic carrot
+6. tomato
+7. potato
+8. beans
+9. cucumber

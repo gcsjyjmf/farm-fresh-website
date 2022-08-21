@@ -1,0 +1,161 @@
+/* 
+  The following people have worked on this file: 
+  Justin Mountain
+  Fei Ma
+*/
+
+/* Menu Area */
+.menu-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+        "search search"
+        "select-type select-type"
+        "product-area product-area";
+}
+
+#search {
+    grid-area: search;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+#search-bar {
+    width: 50vw;
+    padding: 0.5rem;
+}
+
+#select-type {
+    grid-area: select-type;
+    background-color: #f9f9f9;
+    color: #2b2b2b;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    padding-bottom: 2rem;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+#product-area {
+    grid-area: product-area;
+    padding: 1rem var(--padding-master) 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    /* align-items: stretch; */
+
+}
+
+#product-area a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card {
+    width: 14rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 18rem;
+}
+
+.hidden-card {
+    width: 18rem;
+    visibility: collapse;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-img {
+    border-radius: 100vw;
+    width: 7rem;
+}
+
+.product-price {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.product-name {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.product-desc {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+@media screen and (min-width: 55rem) {
+    #select-type {
+        flex-direction: row;
+        padding-left: var(--padding-master);
+        padding-right: var(--padding-master);
+    }
+
+    label {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    .menu-container {
+        padding: 0 var(--padding-master);
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-areas:
+            "search search"
+            "select-type product-area";
+    }
+
+    #search {
+        text-align: center;
+        background-color: #f9f9f9;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #search-bar {
+        width: 60vw;
+    }
+
+    #select-type {
+        flex-direction: column;
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    label {
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    #product-area {
+        padding: 0rem;
+    }
+}
